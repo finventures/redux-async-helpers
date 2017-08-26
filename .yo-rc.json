@@ -1,0 +1,9 @@
+{
+  "generator-npm-module": {
+    "promptValues": {
+      "authorName": "rrcobb",
+      "fullName": "Robert Cobb",
+      "emailAddress": "rwcobbjr@gmail.com"
+    }
+  }
+}

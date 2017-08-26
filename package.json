@@ -1,0 +1,30 @@
+{
+  "name": "redux-async-helpers",
+  "description": "Helpers for managing async requests in redux",
+  "version": "0.0.0",
+  "dependencies": {},
+  "scripts": {
+    "lint": "eslint -f unix .",
+    "inspect": "jsinspect",
+    "pretest": "npm run lint && npm run inspect",
+    "test": "nyc mocha",
+    "posttest": "nyc check-coverage --statements 90 --branches 70 --functions 90 --lines 90"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "author": "Robert Cobb <rwcobbjr@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rrcobb/redux-async-helpers.git"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
+    "jsinspect": "^0.12.7",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0"
+  }
+}
