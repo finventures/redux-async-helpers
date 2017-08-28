@@ -8,6 +8,7 @@
     "inspect": "jsinspect",
     "pretest": "npm run lint && npm run inspect",
     "test": "nyc mocha",
+    "prepublishOnly": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
     "posttest": "nyc check-coverage --statements 90 --branches 70 --functions 90 --lines 90"
   },
   "publishConfig": {
@@ -20,6 +21,9 @@
     "url": "git@github.com:rrcobb/redux-async-helpers.git"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "eslint": "^4.3.0",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-plugin-import": "^2.7.0",
