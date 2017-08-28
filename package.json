@@ -26,5 +26,9 @@
     "jsinspect": "^0.12.7",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0"
+  },
+  "peerDependencies": {
+    "redux": "^3.7.2",
+    "rxjs": "^5.4.3"
   }
 }
